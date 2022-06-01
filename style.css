@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 68px;
+  height: 35%;
+}
+
+.nav-list ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 0.75rem;
+  display: block;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 20px;
+  background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+  margin-top: 4px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f5f5dc;
+  padding: 10px 68px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.toggler-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggler-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: tomato;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.1em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 1.2em;
+  color: hsl(230, 16%, 62%);
+}
+
+.contain {
+  width: 400px;
+  padding: 5% 0;
+}
+
+.contain .btn {
+  margin: 5% 0;
+}
+
+.bg_svg {
+  position: absolute;
+  top: -20%;
+  right: -15%;
+  max-width: 74%;
+}
+
+.cont_img {
+  position: relative;
+  top: -110px;
+  right: -15%;
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero-img {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.main-container {
+  position: relative;
+  top: -250px;
+  padding: 10px 68px;
+  background-color: hsl(220, 16%, 96%);
+}
+
+.main-head {
+  padding-top: 37px;
+}
+
+.main-head p {
+  width: 56%;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 0;
+  margin-bottom: 63px;
+}
+
+.latest {
+  position: relative;
+  padding: 10px 68px;
+  top: -208px;
+  margin-bottom: -250px;
+}
+
+footer {
+  background-color: rgb(10, 10, 80);
+  padding: 5%;
+  color: #f5f5dc;
+  display: grid;
+  grid-template-columns: 260px 260px 260px 400px;
+  gap: 5%;
+  align-items: center;
+}
+
+.footer {
+  margin-top: 15px;
+}
+
+.footer__img {
+  display: flex;
+  gap: 10px;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer ul li {
+  list-style: none;
+  padding: 6px;
+}
+
+.footer__info {
+  display: flex;
+  text-align: right;
+}
+
+.footer__info ul li {
+  list-style: none;
+}
+
+.footer ul li {
+  list-style: none;
+  padding: 3px;
+}
+
+@media (max-width: 900px) {
+  .toggler-btn {
+    display: flex;
+  }
+  .nav-list {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-list li {
+    text-align: center;
+  }
+
+  .nav-list li a {
+    padding: 0.1rem 0.3rem;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .bg_svg {
+    top: -5%;
+    left: 0;
+    max-width: 100%;
+  }
+
+  .cont_img {
+    position: absolute;
+    top: -120px;
+    right: 5%;
+    z-index: auto;
+    width: 90%;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .contain {
+    margin: 20rem 0 0 0;
+    text-align: center;
+    position: static;
+    padding: 0 10%;
+    max-width: 100%;
+  }
+
+  .main-container {
+    text-align: center;
+    padding: 33px 50px;
+    top: 0;
+  }
+
+  .main-head p {
+    width: 100%;
+  }
+
+  .main-grid {
+    grid-template-columns: auto;
+    gap: 60px;
+  }
+
+  .latest {
+    text-align: center;
+    margin-top: 260px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 88px;
+  }
+
+  .footer__img {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__info {
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+}
